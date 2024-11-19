@@ -24,20 +24,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import Reveal from './Reveal'
 
 
-const skills = [
-  {
-    category: 'Frontend',
-    technologies: [
-      {name: 'Html', icon: <DiHtml5 className='text-orange-600 mx-2'/>},
-      {name: 'Css', icon: <DiCss3 className='text-blue-500 mx-2'/>},
-      {name: 'Javascript', icon: <DiJavascript1 className='text-yellow-400 mx-2'/>},
-      {name: 'Tailwind', icon: <RiTailwindCssFill className='text-blue-500 mx-2'/>},
-      {name: 'Bootstrap', icon: <DiBootstrap className='text-purple-500 mx-2'/>},
-      {name: 'React', icon: <DiReact className='text-blue-500' />},
-      {name: 'Illustrator', icon: <DiIllustrator className='text-yellow-700 mx-2'/>},
-      {name: 'Photoshop', icon: <DiPhotoshop className='text-blue-600 mx-2'/>},
-    ]
-  },
+const habilidades = [
   {
     category: 'Fullstack',
     technologies: [
@@ -54,27 +41,44 @@ const skills = [
       {name: 'Wordpress', icon: <DiWordpress className='text-blue-400 mx-2'/>},
       {name: 'Github', icon: <DiGithubBadge className='text-gray-200 mx-2'/>},
     ]
-  }
+  },
+  
+  {
+    category: 'Frontend',
+    technologies: [
+      {name: 'Html', icon: <DiHtml5 className='text-orange-600 mx-2'/>},
+      {name: 'Css', icon: <DiCss3 className='text-blue-500 mx-2'/>},
+      {name: 'Javascript', icon: <DiJavascript1 className='text-yellow-400 mx-2'/>},
+      {name: 'Tailwind', icon: <RiTailwindCssFill className='text-blue-500 mx-2'/>},
+      {name: 'Bootstrap', icon: <DiBootstrap className='text-purple-500 mx-2'/>},
+      {name: 'React', icon: <DiReact className='text-blue-500' />},
+      {name: 'Illustrator', icon: <DiIllustrator className='text-yellow-700 mx-2'/>},
+      {name: 'Photoshop', icon: <DiPhotoshop className='text-blue-600 mx-2'/>},
+    ]
+  },
+  
 ]
 
 
-const Skills = () => {
+const Habilidades = () => {
   return (
-    <div className='max-w-[650px] mx-auto flex felx-col justify-center px-4 text-gray-200 pb-8 md:py-12' id="skills">
+    <div className='max-w-[650px] mx-auto flex felx-col justify-center px-4 text-gray-200 pb-8 md:py-12' id="habilidades">
       <Reveal>
-        <h2 className='text-3xl font-bold mb-4 text-center'>Skills</h2>
+        <h2 className='text-3xl font-bold mb-4 text-center'>Habilidades</h2>
         <p className='text-center mb-8'>
-          I worked on various frontend and fullstack projects, check them <a href="#" className='underline'>Here</a>
+          Realizo diferentes funciones como biomédica, como programadora tengo habilidad en tecnologías
+          importantes, puedes consultar información adicional dando 
+          click <a href="#" className='underline'> Aquí</a>
         </p>
 
         <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8
                         ">
-            {skills.map((skill, index) => (
+            {habilidades.map((habilidades, index) => (
                 <div key={index} className="border border-purple-900 p-6 rounded-lg bg-purple-900/20 shadow-lg
                                 w-full md:w-1/2">
-                    <h3 className="text-xl font-bold mb-4 text-center">{skill.category}</h3>
+                    <h3 className="text-xl font-bold mb-4 text-center">{habilidades.category}</h3>
                     <div className="grid grid-cols-2 gap-4">
-                        {skill.technologies.map((tech, idx) => (
+                        {habilidades.technologies.map((tech, idx) => (
                             <div key={idx} className="flex items-center space-x-2">
                                 <span className="text-2xl">{tech.icon}</span>
                                 <span>{tech.name}</span>
@@ -90,4 +94,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Habilidades

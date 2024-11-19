@@ -3,26 +3,18 @@ import profilepic from '../assets/profpic.png';
 import { TypeAnimation } from 'react-type-animation';
 import ShinyEffect from './ShinyEffect';
 import {
-  AiOutlineGithub,
-  AiOutlineInstagram,
-  AiOutlineLinkedin,
-} from 'react-icons/ai';
-import {
   DiHtml5,
   DiCss3,
   DiJavascript1,
-  DiRubyRough,
-  DiRor,
   DiPython,
   DiDjango,
-  DiPhp,
-  DiLaravel,
-  DiIllustrator,
-  DiPhotoshop,
-  DiReact,
+  
 } from 'react-icons/di';
 import { motion } from 'framer-motion';
 import { FaWhatsappSquare } from 'react-icons/fa';
+import DragerLogo from '../assets/drager.svg';
+import MindrayLogo  from '../assets/mindray.svg';
+
 
 const Hero = () => {
   return (
@@ -33,19 +25,17 @@ const Hero = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
+      
         >
           <TypeAnimation
             sequence={[
-              'Fullstack dev',
+              'Tecnóloga Biomédica',
               1000,
-              'Dev teacher',
+              'Especialista en equipos Odontológicos',
               1000,
-              'Backend developer.',
+              'Metróloga',
               1000,
-              'Team leader.',
-              1000,
-              'Project manager',
-              1000,
+            
             ]}
             speed={50}
             repeat={Infinity}
@@ -58,8 +48,8 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.5 }}
             className='text-gray-200 md:text-7xl text-5xl tracking-tight mb-4'
           >
-            HEY, I AM <br />
-            <span className='text-purple-500'>SANTIAGO MESA</span>
+            Hola, Bienvenidos a mi portafolio, soy <br />
+            <span className='text-purple-500'>Wendy Carmona</span>
           </motion.p>
 
           <motion.p
@@ -69,7 +59,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1 }}
             className='text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6'
           >
-            I'm a passionate developer with over 3 years of experience
+            Biomédica con más de 4 años de experiencia y programadora en formación.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -96,33 +86,10 @@ const Hero = () => {
             </motion.button>
 
             <div className='flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20'>
-              <motion.a
-                whileHover={{ scale: 1.2 }}
-                href='https://github.com/altair3542'
-                target='_blank'
-              >
-                <AiOutlineGithub />
-              </motion.a>
 
               <motion.a
                 whileHover={{ scale: 1.2 }}
-                href='https://www.linkedin.com/in/smserna/'
-                target='_blank'
-              >
-                <AiOutlineLinkedin />
-              </motion.a>
-
-              <motion.a
-                whileHover={{ scale: 1.2 }}
-                href='https://www.instagram.com/thiago_mesa/'
-                target='_blank'
-              >
-                <AiOutlineInstagram />
-              </motion.a>
-
-              <motion.a
-                whileHover={{ scale: 1.2 }}
-                href='https://wa.me/573196794582'
+                href='https://wa.me/573012992459'
                 target='_blank'
               >
                 <FaWhatsappSquare />
@@ -148,19 +115,18 @@ const Hero = () => {
         transition={{ duration: 1, delay: 2 }}
         className='flex flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24'
       >
-        <p className='text-gray-200 mr-6'>My tech stack</p>
-        <DiRubyRough className='text-red-500 mx-2' />
-        <DiRor className='text-red-600 mx-2' />
+        <p className='text-gray-100 mr-4 text-4xl'> Mis lenguajes de programación</p>
         <DiHtml5 className='text-orange-600 mx-2' />
         <DiCss3 className='text-blue-500 mx-2' />
         <DiJavascript1 className='text-yellow-400 mx-2' />
         <DiPython className='text-yellow-400 mx-2' />
         <DiDjango className='text-green-600 mx-2' />
-        <DiPhp className='text-purple-500 mx-2' />
-        <DiLaravel className='text-red-600 mx-2' />
-        <DiReact className='text-blue-500 mx-2' />
-        <DiIllustrator className='text-yellow-700 mx-2' />
-        <DiPhotoshop className='text-blue-600 mx-2' />
+      
+
+        <p className='text-gray-100 mr-6 text-4xl'> Distribuidora autorizada</p>
+        <img src={DragerLogo} alt="Logo" className="w-28 h-28 mx-4" />
+        <img src={MindrayLogo } alt="Logo" className="w-28 h-28 mx-4"/>
+        
       </motion.div>
 
       <div className='absolute inset-0 hidden md:block'>

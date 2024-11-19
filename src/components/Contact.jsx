@@ -12,11 +12,10 @@ const Contact = () => {
         <div>
           <div className='text-gray-300 my-3'>
             <h3 className='text-4xl font-semibold mb-5'>About <span>Me</span></h3>
-            <p className='text-justify leading-7 w-11/12 mx-auto'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            eos, quam vel quisquam, explicabo sit labore dignissimos optio
-            ratione quibusdam doloribus pariatur consequuntur sint.
-            Reprehenderit cupiditate possimus facere quasi voluptatem?
+            <p className='text-justify leading-7 w-11/12'>
+           Soy una biomedica proactiva, responsable y llena de amor por mi trabajo, 
+           cada día me esfuerzo por ser mejor y brindar la mejor experiencia 
+           a mis clientes para obtener excelentes resultados.
             </p>
           </div>
           <div className='flex mt-10 items-center gap-7'>
