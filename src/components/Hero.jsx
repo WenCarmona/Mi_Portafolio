@@ -39,7 +39,7 @@ const Hero = () => {
             ]}
             speed={50}
             repeat={Infinity}
-            className='font-bold text-gray-400 text-xl md:text-5xl italic- mb-4'
+            className='font-bold text-teal-500 text-xl md:text-5xl italic- mb-4'
           />
           <motion.p
             initial={{ opacity: 0 }}
@@ -49,9 +49,9 @@ const Hero = () => {
             className='text-gray-200 md:text-7xl text-5xl tracking-tight mb-4'
           >
             Hola, Bienvenidos a mi portafolio, soy <br />
-            <span className='text-purple-500'>Wendy Carmona</span>
+            <span className='text-teal-500'>Wendy Carmona</span>
           </motion.p>
-
+          
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -73,7 +73,7 @@ const Hero = () => {
                 scale: 1.05,
                 boxShadow: '0px 0px 8px rgba(0,0,0,0.3)',
               }}
-              className='z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl'
+              className='z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-teal-600 rounded-xl'
             >
               <a
                 href='https://drive.google.com/uc?export=download&id=10jR9tKJ7f8-coObwLzbbHXjG_iX1hYcz'
@@ -81,11 +81,11 @@ const Hero = () => {
                 rel='noopener noreferrer'
                 download
               >
-                Download CV
+                Descargar CV
               </a>
             </motion.button>
 
-            <div className='flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20'>
+            <div className='flex gap-6 flex-row text-4xl md:text-6xl text-teal-500 z-20'>
 
               <motion.a
                 whileHover={{ scale: 1.2 }}
@@ -100,10 +100,10 @@ const Hero = () => {
 
         <motion.img
           src={profilepic}
-          className='w-[300px] md:w-[450px]'
-          initial={{ opacity: 0, scale: 0.8 }}
+          className='w-[200px] md:w-[350px] rounded-lg shadow-lg'
+          initial={{ opacity: 0, scale: 1 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 1 }}
         />
       </div>
