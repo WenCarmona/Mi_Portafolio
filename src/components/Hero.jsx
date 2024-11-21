@@ -76,7 +76,7 @@ const Hero = () => {
               className='z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-teal-600 rounded-xl'
             >
               <a
-                href='https://drive.google.com/uc?export=download&id=10jR9tKJ7f8-coObwLzbbHXjG_iX1hYcz'
+                href='/cv.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
                 download

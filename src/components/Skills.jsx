@@ -3,22 +3,9 @@ import {
   DiHtml5,
   DiCss3,
   DiJavascript1,
-  DiRubyRough,
-  DiRor,
   DiPython,
   DiDjango,
-  DiPhp,
-  DiLaravel,
-  DiIllustrator,
-  DiPhotoshop,
   DiReact,
-  DiMongodb,
-  DiPostgresql,
-  DiAndroid,
-  DiWordpress,
-  DiGithubBadge,
-  DiSqllite,
-  DiBootstrap,
 } from 'react-icons/di'
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FcSynchronize } from "react-icons/fc";
