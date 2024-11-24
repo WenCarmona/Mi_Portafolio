@@ -36,7 +36,7 @@ const Experience = () => {
               whileInView="visible"
               viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 1 }}
-              className='border border-teal-600 p-6 rounded-lg transition-shadow duration-300 bg-teal-200/10 transform transition-all duration-300 hover:scale-105'
+              className='border border-teal-600 p-6 rounded-lg bg-teal-200/10 transform transition-all duration-300 hover:scale-105'
             >
               <h2 className='text-gray-100 text-2xl font-semibold'>{experience.company}</h2>
               <p className='text-gray-300'>{experience.period}</p>

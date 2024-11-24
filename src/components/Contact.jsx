@@ -33,7 +33,7 @@ const Contact = () => {
         </div>
 
         <form
-          action="https://getform.io/f/aollolrb"
+          action="https://getform.io/f/bzyyqnna"
           method='POST'
           className='max-w-6xl p-5 md:p-12'
           id='form'
@@ -46,7 +46,7 @@ const Contact = () => {
             id="name"
             placeholder='Tu nombre...'
             name='name'
-            className='mb-2 w-full rounded-md border border-teal-600 py-2 pl-2 pr-4'
+            className='mb-2 w-full rounded-md border border-teal-900 py-2 pl-2 pr-4'
           />
           <input
             type="email"
@@ -61,7 +61,7 @@ const Contact = () => {
             cols="30"
             rows="4"
             placeholder="Tu mensaje ..."
-            className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-primary-color"
+            className="w-full py-3 rounded-md text-gray-800 font-semibold text-xl pl-2 "
           />
           <button
               type="submit"

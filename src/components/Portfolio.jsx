@@ -89,13 +89,13 @@ const Portfolio = () => {
               <div className='flex space-x-4'>
                 <a
                   href={project.links.site}
-                  className='px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:text-teal-500 transition duration-300'
+                  className='px-4 py-2 bg-teal-600 text-gray-200 rounded-lg hover:text-fuchsia-900 transition duration-300'
                 >
                   Ir al sitio
                 </a>
                 <a
                   href={project.links.site}
-                  className='px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:text-teal-500 transition duration-300'
+                  className='px-4 py-2 bg-teal-600 text-gray-200 rounded-lg hover:text-fuchsia-900 transition duration-300'
                 >
                   <FaWhatsappSquare  className='text-3xl'/>
                 </a>

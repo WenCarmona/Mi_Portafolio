@@ -55,7 +55,7 @@ const Navbar = () => {
             className='fixed left-0 top-0 w-full min-h-screen bg-gray-900 z-40'
             >
                 <ul className='font-semibold text-4xl space-y-8 mt-24 text-center'>
-                    <li><Link to="skills" onClick={closeNav} smooth={true} offset={50} duration={500}className="hover:text-teal-500 hover:scale-110 transition-all duration-300">Sobre mi</Link></li>
+                    <li><Link to="habilidades" onClick={closeNav} smooth={true} offset={50} duration={500}className="hover:text-teal-500 hover:scale-110 transition-all duration-300">Sobre mi</Link></li>
                     <li><Link to="portfolio" onClick={closeNav} smooth={true} offset={50} duration={500}>Portafolio</Link></li>
                     <li><Link to="contact" onClick={closeNav} smooth={true} offset={50} duration={500}>Contacto</Link></li>
                 </ul>
